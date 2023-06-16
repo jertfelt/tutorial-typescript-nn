@@ -1,0 +1,99 @@
+// let greet: Function;
+
+// //greet = "hello";
+// greet = () => {
+//   console.log("HELLO")
+// }
+
+// const add = (a: number, b: number) => {
+//   console.log(a+b)
+// }
+// add(5,2)//kan inte lägga in en string
+
+// const add2 = (a: number, b: number, c?: number | string) => {
+//   console.log(a+b);
+//   console.log(c)
+// }
+// add2(3,2, "hej")
+// add2(1,1)
+
+// const addWithDefault = (a:number, b: number| string = 10) => {
+//   console.log("default:", b)
+//   console.log(a,b)
+// }
+// addWithDefault(1)
+// addWithDefault(1,3)
+
+// const addVoid = (a:number): void => {
+//   console.log("void is NOT ANY VALUE AT ALL, inte ens undefined")
+// }
+
+// const minus = (a: number, b: number) => {
+//   return a-b
+// }
+// let result = minus(10,3)
+
+// let docOne: HasFormatter;
+// let docTwo: HasFormatter;
+
+// docOne = new Invoice("Jonas", "Ansiktsmålning", 3);
+// docTwo = new Payment("Tova", "Plumbing work", 3303030)
+
+// let docs: HasFormatter[] = [];
+// docs.push(docOne);
+// docs.push(docTwo);
+
+
+// const anchor = document.querySelector("a")!
+// //utropstecknet säger att vi VET att det finns och att det inte är null
+// // if(anchor){
+// //   console.log(anchor.href) 
+// // }
+
+// //interfaces
+// interface IsPerson{
+//   name: string,
+//   age: number,
+//   speak(a: string): void;
+//   spend(a: number): void;
+// }
+
+// const me: IsPerson = {name: "Tova", age: 34, speak(text: string):void{
+//   console.log(text)
+// },spend(amount:number): number{
+//   console.log("I spent", amount)
+//   return amount;
+// }}
+// console.log(me, "ME")
+
+// const Oskar: IsPerson = {name: "oskar", age: 37, speak(text: string):void{
+//   console.log(text)
+// },spend(amount:number): number{
+//   console.log("I spent", amount)
+//   return amount;
+// }}
+
+// let someone: IsPerson;
+// const greetPerson = (person: IsPerson) => {
+// console.log("Hello", person.name)
+// }
+// greetPerson(Oskar)
+
+// const invOne = new Invoice("Rusmus", "Utställning", 18000)
+// const invTwo = new Invoice("Amnesty", "Grafisk Design", 5000)
+// // console.log(invOne,invTwo)
+// // console.log(invTwo.format())
+// // let invoices: string[] = [];
+// let invoices: Invoice[] = [];
+// console.log(invoices, "before")
+// //invoices.push(invOne) will work.
+// invoices.push(invOne, invTwo);
+// console.log(invoices, "array of objects")
+
+// // invOne.amount = 350;
+// // console.log(invOne)
+
+// invoices.forEach(inv => {
+//   console.log(inv.client, inv.details, inv.format())
+//   // console.log(inv.amount) <-- kan inte göra detta när amount är private
+// })
